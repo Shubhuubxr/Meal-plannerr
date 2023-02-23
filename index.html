@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meal Planner Project</title>
+    <link rel="stylesheet" href="styles.css">
+   
+</head>
+<body>
+        <div id ="nav">
+            <a class="logo"><img id="navimg" src="./logo.png" alt="Logo" width="30px"><span>Meal Planner</span></a>
+            <ul>
+        <li>About Us</li>
+        <li>Contact Us</li>
+        <li>Query Section</li>
+          </ul>     
+           </div>
+
+        <!-- Form creation -->
+
+    <div id="form">
+        <div class="input_contain">
+            <div><label for="Name">Name: </label><br>
+                <input type="text" id="name" name="name" value="" placeholder="Enter Your Name" autofocus required><br><br>
+            </div>
+            <div>
+                <label for="height">Height: </label><br>
+                <input type="number" id="height" name="height" value="162" placeholder="Enter Your height in cms"
+                    required><br><br>
+            </div>
+            <div>
+                <label for="Weight">Weight:</label><br>
+                <input type="number" id="weight" name="Weight" value="60" placeholder="Enter Your Weight in kg"
+                    required><br><br>
+            </div>
+            <div>
+                <label for="age">Age:</label><br>
+                <input type="number" id="age" name="age" value="23" placeholder="Enter Your Age" required><br><br>
+            </div>
+            <div>
+                <label>Gender: </label>
+                <input type="radio" id="M_gender" name="gender" value="male">
+                <label for="malegender">Male</label>
+                <input type="radio" id="F_gender" name="gender" value="female">
+                <label for="femalegender">Female</label><br><br>
+            </div>
+            <div>
+                <label for="email">Email id:</label><br>
+                <input type="email" id="email" name="email" value="" placeholder="Enter Your Valid Email"><br><br>
+            </div>
+            <div>
+                <label for="Activity">Activity Level:</label><br>
+                <select required>
+                    <option id="ActivityLow" value="Light">Light</option>
+                    <option id="ActivityMid" value="Moderate">Moderate</option>
+                    <option id="ActivityHigh" value="Active">Active</option>
+                </select>
+                <br><br>
+            </div>
+            <button id="btn">Generate Meals</button>
+        </div>
+    </div>
+       <div class ="Answer_Container">
+        <p id = "result">Show Result here</p>
+       </div>
+
+
+
+    <section class="meal-heading">
+    <h2>Breakfast</h2>
+    <h2>Lunch</h2>
+    <h2>Dinner</h2>
+       </section>
+     <div class="meals">
+      <div class="card-box"></div>
+          </div>
+
+           <section class="recipe">
+            <div class="bg">
+              <div class="dish">
+            <span class="ingrediants"> </span>
+            <span class="equipment"> </span>
+        </div>
+        <aside class="steps"></aside>
+    </div>
+</section>
+
+    
+<script src="./App.js"></script>
+</body>
+</html>
+
